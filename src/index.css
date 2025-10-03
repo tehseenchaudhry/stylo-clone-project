@@ -1,0 +1,272 @@
+@import "tailwindcss";
+header {
+  width: 1200px;
+  /* border: 2px solid red; */
+  margin: auto;
+  display: flex;
+  /* gap: 50px; */
+  justify-content: space-between;
+}
+
+.stylo-logo {
+  /* border: 2px solid aqua; */
+  margin: 12px 0px;
+}
+
+.header-links {
+  /* border: 2px solid burlywood; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+
+.header-link1 {
+  margin-top: 5px;
+  /* border: 2px solid red; */
+}
+
+.header-link1-child {
+  /* border: 2px solid black; */
+  text-decoration: none;
+  margin: 0px 10px;
+  color: #111111;
+  font-family: sans-serif;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+
+.header-link1-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #111111;
+  transition: width 0.3s ease;
+}
+
+.header-link1-child:hover::after {
+  width: 100%;
+}
+
+
+.header-link2 {
+  padding-left: 200px;
+  /* border: 2px solid slateblue; */
+}
+
+.header-link2-child {
+  /* border: 2px solid aqua; */
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  color: #E6007E;
+  margin: 0px 20px;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.header-link2-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #E6007E;
+  transition: width 0.3s ease;
+}
+
+.header-link2-child:hover::after {
+  width: 100%;
+}
+
+.header-icons {
+  /* border: 2px solid rebeccapurple; */
+  width: 150px;
+  display: flex;
+}
+
+.header-icon {
+  /* border: 2px solid blue; */
+  margin: 15px 10px 0px 10px;
+  font-size: 30px;
+  color: #111111;
+}
+
+
+
+.carousel .control-dots .dot {
+  width: 30px !important;
+  height: 3px !important;
+  /* border: 2px solid red; */
+  background-color: white;
+  border-radius: 0px !important;
+  transition: all 0.2s ease !important;
+}
+
+
+ .card-content {
+  width: 280px !important;
+    position: relative;
+  overflow: hidden;
+}
+
+.slick-current .card-content {
+  border:2px solid rgb(190, 187, 187);
+  background-color:rgb(190, 187, 187);
+}
+
+
+.quick-view-btn {
+  position: absolute;
+  bottom: 80px; 
+  left: 0;
+  right: 0;
+  background-color: #E6007E;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease, bottom 0.3s ease;
+  transform: translateY(85px);
+  opacity: 0;
+}
+
+.card-content:hover .quick-view-btn {
+opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+@media (min-width: 576px) {
+  .carousel .control-dots .dot {
+    width: 50px !important;
+    height: 4px !important;
+    background-color: blue !important;
+  }
+  /* .img-step-where-you-feel{
+  height: 300px ;
+  border: orchid 2px solid;
+  } */
+}
+@media (min-width: 768px) {
+  .carousel .control-dots .dot {
+    width: 80px !important;
+    height: 5px !important;
+     background-color: red !important;
+  }
+   /* .img-step-where-you-feel{
+  height: 380px ;
+  border: 2px solid rebeccapurple;
+  } */
+}
+@media (min-width: 1024px) {
+  .carousel .control-dots .dot {
+    width: 80px !important;
+    height: 5px !important;
+     background-color: aqua !important;
+  }
+   /* .img-step-where-you-feel{
+  height: 550px ;
+  border: 2px solid red;
+  } */
+}
+
+.name{
+  color: blue;
+  font-family :'Pacifico';
+}
+.name1{
+  color: blue;
+  font-family: 'Alex Brush';
+}
+.name2{
+  color: blue;
+  font-family: 'Pacifico';
+}
+.name3{
+  color: blue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.name4{
+  color: blue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.name5{
+  color: blue;
+  font-family: 'Times New Roman', Times, serif;
+}
+.name6{
+  color: blue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.name7{
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.name8{
+  color: blue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.name9{
+  color: blue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.name10{
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.name11{
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.name12{
+  color: blue;
+  font-family: cursive;
+}
+.name13{
+  color: blue;
+  font-family: fantasy;
+}
+.name14{
+  color: blue;
+  font-family: monospace;
+}
+.name15{
+  color: blue;
+  font-family: sans-serif;
+}
+.name16{
+  color: blue;
+  font-family: serif;
+}
+.name17{
+  color: blue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.name18{
+  color: blue;
+  font-family: inherit;
+}
+.name19{
+  color: blue;
+  font-family: initial;
+}
+.name19{
+  color: blue;
+  font-family: unset;
+}
+.name19{
+  color: blue;
+  font-family: var(--color-blue-600);
+}
+.name19{
+  color: blue;
+  font-family: calc(text-decoration);
+}
